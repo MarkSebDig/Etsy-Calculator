@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy Shop Profit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for Visual Comparisons -->
+</head>
+<body>
+    <div class="calculator">
+        <!-- Tooltips added via title attributes -->
+        <input type="number" id="salePrice" placeholder="Item Sale Price" title="The price at which you plan to sell your item.">
+        <!-- Additional inputs... -->
+        <select id="discounts" multiple title="Hold Ctrl (Cmd on Mac) to select multiple discounts.">
+            <!-- Discount options... -->
+        </select>
+        <!-- Shipping scenario and other inputs... -->
+        <button onclick="calculateProfit()">Calculate Profit</button>
+        <button onclick="exportToCSV()">Export Results</button> <!-- Export button -->
+        <div id="result"></div>
+        <canvas id="profitChart"></canvas> <!-- Canvas for Chart.js -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
